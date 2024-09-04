@@ -1,0 +1,10 @@
+<!-- app/templates/book_detail.html -->
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1 class="mt-5">{{ book.title }}</h1>
+    <h4>Author: {{ book.author }}</h4>
+    <p>{{ book.description }}</p>
+    <p><strong>Genre:</strong> {{ book.genre }}</p>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Home</a>
+{% endblock %}
